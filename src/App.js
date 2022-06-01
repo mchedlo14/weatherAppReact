@@ -9,7 +9,7 @@ const App = () => {
   const apiKey = '7c670146e0f9b6f274b52e8513984eb5';
   console.log(weatherData)
   const getWeather = (event) => {
-    if (event.key == 'Enter'){
+    if (event.key === 'Enter'){
       fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`).then(
         response => response.json()
       ).then(
